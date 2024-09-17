@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New RegstrationFrom</title>
+        <style>
+            body{
+                background-color: silver;
+            }
+            input{
+                color: red;
+                font-size: 25px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                margin: 8px 0;
+                border: 2px solid black;
+                border-radius: 6px;
+            }
+            #submit{
+                color: black;
+                padding: 10px;
+                background-color: gold;
+            }
+            #website{
+                color: red;
+                font-size: 25px;
+                padding: 1px;
+            }
+
+            div{
+                background-color: lavender;
+                border: 2px solid blanchedalmond;
+               margin: 10px;
+               border-radius: 6px;
+               
+            }
+
+        </style>
+    </head>
+    <body>
+        <div align="center">
+            <form action="hello.jsp" method="post">
+                <table>
+                    <caption><h2>New Website</h2></caption>
+                    <tr>
+                        <td><label for="website" id="website">Website</label></td>
+                        <td>
+                            <input type="url" name="website" id="website" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                       <td colspan="2" align="center">
+                        <input type="button" value="sumbit"
+                        id="submit"
+                       formtarget="New"
+                       required
+                        >
+                       </td>
+
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> new RegstrationFrom</title>
+
+        <style>
+            body{
+                background-color: rgb(205, 230, 203);
+            }
+
+            .mytable{
+                text-align: left;
+                font-size: 25px;
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                
+            }
+
+            input{
+                color: rgb(193, 102, 12);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+                padding: 5px 5px;
+                margin: 8px 0;
+                border: 2px solid gray;
+                border-radius: 5px;
+            
+            }
+
+
+
+        </style>
+    </head>
+
+    <body>
+        <div>
+
+            <form action="hllo.jsp">
+                <table class="mytable">
+                    <caption><h2>RegstrationFrom</h2></caption>
+
+                    <tr>
+                        <td><label for="fname">FullName</label></td>
+                        <td>
+                            <input type="text" name="fname" id="fname" value="Venkatesh"
+                            placeholder="FullName"
+                            required
+                            readonly
+                            >
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Email">Email Id</label></td>
+                        <td>
+                            <input type="email" name="email" id="email" placeholder="Email Id" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="age">age</label></td>
+                        <td>
+                            <input type="number" name="AGe" id="age" step="1" min="21" max="40" required>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Age">Age</label></td>
+                        <td>
+                            <input type="range" name="age2" id="age2" min="25"max="40" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="Color">color</label></td>
+                        <td>
+                            <input type="color" name="color" id="color">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="Sumbilt"  translate="yes"/>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </form>
+        </div>
+    </body>
+</html>

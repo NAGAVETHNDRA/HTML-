@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regstration from</title>
+        <style>
+            body{
+                background-color: lavenderblush;
+            }
+            .myRegTable{
+                text-align: left;
+                 font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            input{
+                color: red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 5px 5px;
+                margin: 8px 0;
+                border: 1px solid blue;
+                border-radius: 5px;
+
+            }
+
+
+            
+        </style>
+    </head>
+    <body >
+        <div aligin = "center" style="background-color: lightblue;">
+            <form action="hello.jsp"
+            method="get"
+            enctype="multipart/form-data"
+            autocomplete="off"
+            >
+
+            <table class="myRegTable">
+                <caption><h2>New RegstrationFrom</h2></caption>
+                <tr>
+                    <td><label for="fname">Full Name</label></td>
+                    <td><input type="text" name="fname" id="fname"
+                        placeholder="Full Name"
+                        required
+                        autofocus/></td>
+                </tr>
+
+                <tr>
+                    <td><label for="email">Email Id</label></td>\
+                    <td><input type="email" name="email" id="email"
+                        placeholder="Email id"
+                        maxlength="20"
+                        required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="Phone">Phone</label></td>
+                    <td>
+                        <input type="number" name="Phone" id="Phone"
+                        placeholder="Phone No"
+                       
+                        pattern="[0-9]{10}"
+                        required/>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="JLc-Course">JLc-Course</label></td>
+                    <td>
+                        <input list = "mycourses" id="JLc-Course" name="course" required>
+                        <datalist id="mycourses">
+                            <option value="java">java</option>
+                            <option value="python">python</option>
+                            <option value="angular">angular</option>
+                            <option value="mangodb">mongodb</option>
+                            <option value="mangodb">mongodb</option>
+                            <option value="mangodb">mongodb</option>
+                        </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" align="center">
+
+                        <input type="submit" value="submit NOw"/>
+
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Table 2 in html</title>
+        <style>
+            table,td,th{
+                border: 1px solid red;
+                border-collapse: collapse;
+                font-size: 25px;
+            }
+            .mytable{
+                width: 80%;
+            }
+
+            tr:nth-child(odd){
+                background-color: azure;
+            }
+
+            tr:nth-child(even){
+                background-color: rgb(204, 204, 243);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <table>
+            <caption><h3>Students information</h3></caption>
+            <thead>
+                <tr>
+                    <th>sid</th>
+                    <th>sname</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>course1</th>
+                    <th>course2</th>
+                </tr>
+
+            </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">101</td>
+                        <td rowspan="2">sri</td>
+                        <td>sri@jlc</td>
+                        <td>12345</td>
+                        <td rowspan="2">Angular</td>
+                        <td rowspan="2">React</td>
+                    </tr>
+
+                    <tr>
+                        <td>vas@jlc</td>
+                        <td>54321</td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td>sd</td>
+                        <td>sd@jlc</td>
+                        <td>123487</td>
+                        <td colspan="2">React</td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td>ds</td>
+                        <td>ds@jlc</td>
+                        <td>18989</td>
+                        <td>Mangodb</td>
+                        <td>React</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">104</td>
+                        <td rowspan="2">srav</td>
+                        <td>savi@jlc</td>
+                        <td>4242</td>
+                        <td rowspan="2">Angular</td>
+                        <td rowspan="2">Node</td>
+                    </tr>
+
+                    <tr>
+                        <td>vas@jlc</td>
+                        <td>54222</td>
+                    </tr>
+
+                    <tr>
+                        <td>105</td>
+                        <td>jav</td>
+                        <td>jav@jlc</td>
+                        <td>198080</td>
+                        <td colspan="2">Nodejs</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <td>106</td>
+                        <td>var</td>
+                        <td>var@jlc</td>
+                        <td>79873</td>
+                        <td>Angular</td>
+                        <td>Mangodb</td>
+                    </tr>
+                </tbody>
+        </table>
+    </body>
+</html>

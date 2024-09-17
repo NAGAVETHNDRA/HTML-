@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>New Date & time</title>
+        <style>
+            body{
+                background-color: purple;
+            }
+            .mytable{
+                text-align: left;
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            input{
+                color: blue;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 5px 5px;
+                margin: 8px 8px;
+                border: 2px solid black;
+                border-radius: 5px ;
+            }
+
+            div{
+                border: 5px solid black;
+                border-radius: 10px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div align = "center" style="background-color: lightblue;">
+            <form action="hello.jsp" autocomplete="on">
+                <table class="mytable">
+                    <caption><h2>Date&time Tables </h2></caption>
+                    <tr>
+                        <td><label for="dob">Date of birth</label></td>
+                        <td><input type="time" name="time" id="dob" min="1980-12-31" max="2020-12-31" required/></td>
+
+                    </tr>
+
+                    <tr>
+                        <td><label for="tob">Time of Birth</label></td>
+                        <td><input type="time" name="tod" id="tob" min="09:00" max="11:00" required/></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="datetime-local"> date-timeLocal</label></td>
+                        <td>
+                            <input type="datetime-local" name="date-timeLocal" id="date-timeLocal" required>
+                        </td>
+                    </tr>
+
+                    <tr>
+
+                    <td><label for="myweek"> week</label></td>
+                    <td><input type="week" name="week" id="week" required></td>
+                    </tr>
+
+                    <tr>
+                        <td><label for="mymonth">Month Of the Year</label></td>
+                        <td>
+                            <input type="month" name="month" id="month" required/>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="submit" value="sumbit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>
+</html>

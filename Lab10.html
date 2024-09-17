@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            If fram works
+        </title>
+        <style>
+             .Body-content{
+                border: 1px solid red;
+                width: 900px;
+                height: 500px;
+                margin-right: 50px;
+                margin-left: 50px;
+                margin-bottom: 10px;
+
+            }
+            #h-menu{
+                
+                border: 2px solid ;
+                color: rgb(170, 14, 40);
+                font-size: 20px;
+                padding: 1%;
+                width: 900px;
+                height: 40px;
+                margin-right: 50px;
+                margin-right: 50px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+                padding-top: 10px;
+                padding-left: 31px;
+            }
+            span{
+                padding: 10px;
+            }
+
+           
+
+            #myframe{
+                width: 900px;
+                height: inherit;
+                border: 1px red solid;
+
+            }
+
+
+
+        </style>
+    </head>
+    <body>
+        <div id="h-menu">
+          <span> <a href="mycourse/angular.html" target="myframe"> Angular Training</a> </span>
+          <span> <a href="mycourse/java.html" target="myframe"> Java Training</a> </span>
+          <span> <a href="mycourse/python.html" target="myframe"> Python Training</a> </span>
+          <span> <a href="https://www.coursecube.com" target="myframe"> coursecube Training</a> </span>
+          <span> <a href="https://www.google.com" target="myframe"> google Training</a> </span>
+          
+        </div>
+
+        <div class="Body-content">
+            <iframe src="mycourse/welcome.html" name="myframe" id="myframe"></iframe>
+        </div>
+    </body>
+</html>

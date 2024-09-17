@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web site dvelopment</title>
+        <style>
+             #sumbit{
+                color: black;
+                
+            }
+            body{
+                background-color: peru;
+            }
+
+            input{
+                color: red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+                font-size: 25px;
+                margin: 8px 0;
+                border: 2px solid brown;
+                border-radius: 5px;
+            }
+            .mytable{
+                text-align: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-weight: bold;
+
+            }
+
+            div{
+                border: 5px solid black;
+                border-radius: 5px;
+                width: 800px;
+                height: 600;
+                margin: 8px 0;
+                align-items: center;
+            }
+
+           
+
+        </style>
+    </head>
+    <body>
+        <div align = "center" style="background-color: rosybrown; font-size: 25px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+            <form action="Lab1.html" 
+            id="regform"
+            autocomplete="on"
+            enctype="multipart/form-data"
+            method="post"
+            novalidate
+            target="_blank"
+            >
+            <table>
+                <caption><h2>New RegstrationFrom </h2></caption>
+                <tr>
+                    <td><label for="website"> Website</label></td>
+                    <td><input type="url" id="website" name="website" required></td>
+                </tr>
+
+                <tr >
+                    <td align="center" colspan="2"> <input type="submit" value="sumbit" id="sumbit"></td>
+                </tr>
+            </table>
+           </form>
+
+           <table class="mytable">
+            <tr>
+                <td><label for="name"> Name</label>
+                </td>
+                <td>
+                    <input type="text" id="name" value="name" required>
+                </td>
+            </tr>
+           </table>
+        </div>
+    </body>
+</html>

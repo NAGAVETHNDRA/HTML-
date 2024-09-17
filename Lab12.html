@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regstration from</title>
+        <style>
+            body{
+                background-color: lavender;
+                
+                
+            }
+
+            .blur{
+                backdrop-filter: blur(15px);
+            }
+            .myRegTable{
+                text-align: left;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                
+            }
+
+            input,select,textarea{
+                color: red;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                padding: 5px 5px;
+                font-weight: bold;
+                margin: 8px 0;
+                border: 1px solid blue;
+                border-radius: 5px;
+
+            }
+
+            input[type = sumbit],input[type = rest],button{
+                color: green;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 20px;
+                font-weight: bold;
+                padding: 10px 10px;
+                margin: 22px 0;
+            }
+
+            input[type=radio],input[type=checkbox] { 
+                    color:red; 
+                    border: 5px red solid; 
+                    width: 1.5em; 
+                    height: 1.5em; 
+            } 
+            div{ 
+                background-color:beige; 
+                width:75%; 
+                margin-left:150px; 
+            } 
+
+
+
+        </style>
+    </head>
+    <body >
+        <div >
+        <form action="register.jlc" method="post" enctype="multipart/form-data">
+        <table class="myRegTable">
+            <caption> <h2>RegstrationForm</h2></caption>
+            <tr>
+                <td><label for="fname"> Full Name</label></td>
+                <td> <input type="text" id="fname" name="fname"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email"> Email Id</label></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="password">PassWord</label></td>
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Courses</label></td>
+                <td> 
+                <input type="radio" name="course" id="course" value="Python">Python <br/>
+                <input type="radio" name="course" id="course" value="Java">Java <br/>
+                <input type="radio" name="course" id="course" value="Angular">Angular <br/>
+                <input type="radio" name="course" id="course" value="Mangodb">Mangodb <br/>
+                </td>
+                
+            </tr>
+
+            <tr>
+                <td><label for="course">Courses</label></td>
+                <td><input type="checkbox" name="course" id="course" value="Python"> Python <br/>
+                    <input type="checkbox" name="course" id="course" value="Java"> Java <br/>
+                    <input type="checkbox" name="course" id="course" value="Angular"> Angular <br/>
+                    <input type="checkbox" name="course" id="course" value="Mangodb"> Mangodb <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="course">Courses</label></td>
+                <td>
+                    <select name="course" id="course">
+                        <option value="">-----------select---------------</option>></option>
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                        <option value="Angular">Angular</option>
+                        <option value="Mangodb">Mangodb</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="photo"> UPload photo</label></td>
+                <td><input type="file" name="photo" id="photo"></td>
+            </tr>
+
+            <tr>
+                <td><label for="myRemarks">Remarks</label></td>
+                <td>
+                    <textarea name="remarks" id="myRemarks" cols="30" rows="5"></textarea>
+
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="button" value=" iam b 1"/>
+                    <button> i am button 2</button>
+                    <input type="submit" value="ResgisterNOw"/>
+                    <input type="reset" value="Clear Form"/>
+                    <input type="hidden" name="mytoken" value="diehoohh">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+   </div>
+    </body>
+</html>

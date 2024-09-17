@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tables in html</title>
+        <style>
+           
+            
+           body{
+                width: 100%;
+            }
+            .mytable{
+                width: 90%;
+                
+            }
+
+            table,td,th{
+                border: 1px solid red;
+                border-collapse: collapse;
+                font-size: 25px;
+            }
+            /*
+            tr:nth-child(odd){
+                background-color: azure;
+
+            }
+
+            tr:nth-child(even){
+                background-color: lavender;
+                
+            }
+
+            tr:nth-child(3){
+                background-color: red;
+                
+            }
+            */
+
+            td:nth-child(odd){
+                background-color: azure;
+            }
+
+            td:nth-child(even){
+                background-color: lavender;
+            }
+
+            td:nth-child(3){
+                background-color: gray;
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <table class="mytable">
+            <caption> <h3>Students information</h3></caption>
+            <thead>
+                <tr>
+                    <th>sid</th>
+                    <th>sname</th>
+                    <th>email</th>
+                    <th>phone</th>
+                    <th>course</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>101</td>
+                    <td>sri</td>
+                    <td>sri@jlc</td>
+                    <td>12345</td>
+                    <td>Angular</td>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>sri</td>
+                    <td>sri@jlc</td>
+                    <td>12345</td>
+                    <td>Angular</td>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>sri</td>
+                    <td>sri@jlc</td>
+                    <td>12345</td>
+                    <td>Angular</td>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>sri</td>
+                    <td>sri@jlc</td>
+                    <td>12345</td>
+                    <td>Angular</td>
+                </tr>
+
+                <tr>
+                    <td>101</td>
+                    <td>sri</td>
+                    <td>sri@jlc</td>
+                    <td>12345</td>
+                    <td>Angular</td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </body>
+</html>
